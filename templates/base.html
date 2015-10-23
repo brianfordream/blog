@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title></title>
+    <style>
+        p {font-size:18px; word-wrap: break-word;word-break: break-all;}
+        body {font-size:16px;}
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">博客</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="rows">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item text-center">
+                    <img src="/static/touxiang.jpg" alt="头像" class="img-circle" style="width: 120px; height: 120px;">
+
+                    <p>努力的Coder</p>
+
+                    <p><span class="label label-info">好记性不如烂笔头</span></p>
+
+                    <p><span class="label label-success">Python,Linux,SQL</span></p>
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    文章分类
+                </li>
+                {% for category in categories %}
+                <li class="list-group-item">
+                    <span class="badge">{{category.count}}</span>
+                    <a href='/category/{{category.name}}/1'>{{category.name}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-9">
+            {% block body %}
+            {% endblock body %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

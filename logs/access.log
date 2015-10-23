@@ -1,0 +1,1306 @@
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:43:48 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+writing pidfile to pidfile
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:44108 (port auto-assigned) fd 6
+Python version: 2.7.8 (default, Jun 18 2015, 18:58:15)  [GCC 4.9.1]
+Python main interpreter initialized at 0xa5e310
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 1048576 bytes
+mapped 17117105 bytes (16715 KB) for 12 cores
+*** Operational MODE: preforking+threaded ***
+2015-10-23 23:43:48,962 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2015-10-23 23:43:48,962 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,963 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2015-10-23 23:43:48,963 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,964 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
+2015-10-23 23:43:48,964 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,965 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:43:48,965 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,966 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:43:48,966 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,967 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
+2015-10-23 23:43:48,967 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,968 INFO sqlalchemy.engine.base.Engine DESCRIBE `category`
+2015-10-23 23:43:48,968 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,968 INFO sqlalchemy.engine.base.Engine DESCRIBE `article`
+2015-10-23 23:43:48,968 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,969 INFO sqlalchemy.engine.base.Engine DESCRIBE `tag`
+2015-10-23 23:43:48,969 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:43:48,970 INFO sqlalchemy.engine.base.Engine DESCRIBE `article_tag`
+2015-10-23 23:43:48,970 INFO sqlalchemy.engine.base.Engine ()
+ * Running on http://0.0.0.0:1998/ (Press CTRL+C to quit)
+ * Restarting with stat
+unable to load configuration from uwsgi
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:46:32 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+writing pidfile to pidfile
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:57775 (port auto-assigned) fd 6
+Python version: 2.7.8 (default, Jun 18 2015, 18:58:15)  [GCC 4.9.1]
+Python main interpreter initialized at 0x2402310
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 1048576 bytes
+mapped 17117105 bytes (16715 KB) for 12 cores
+*** Operational MODE: preforking+threaded ***
+2015-10-23 23:46:32,400 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2015-10-23 23:46:32,400 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,401 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2015-10-23 23:46:32,401 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,401 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
+2015-10-23 23:46:32,401 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,402 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:46:32,402 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,402 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:46:32,402 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,403 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
+2015-10-23 23:46:32,403 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,404 INFO sqlalchemy.engine.base.Engine DESCRIBE `category`
+2015-10-23 23:46:32,404 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,404 INFO sqlalchemy.engine.base.Engine DESCRIBE `article`
+2015-10-23 23:46:32,404 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,405 INFO sqlalchemy.engine.base.Engine DESCRIBE `tag`
+2015-10-23 23:46:32,405 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:46:32,405 INFO sqlalchemy.engine.base.Engine DESCRIBE `article_tag`
+2015-10-23 23:46:32,406 INFO sqlalchemy.engine.base.Engine ()
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2402310 pid: 6320 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6320)
+spawned uWSGI worker 1 (pid: 6324, cores: 3)
+spawned uWSGI worker 2 (pid: 6325, cores: 3)
+spawned uWSGI worker 3 (pid: 6326, cores: 3)
+spawned uWSGI worker 4 (pid: 6327, cores: 3)
+spawned uWSGI http 1 (pid: 6330)
+unable to stat() logs/.touch_log_rotate.tmp, events will be triggered as soon as the file is created
+2015-10-23 23:47:28,948 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:28,949 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article) AS anon_1
+2015-10-23 23:47:28,949 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:47:28,951 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:28,952 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.create_time AS article_create_time 
+FROM article ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:28,952 INFO sqlalchemy.engine.base.Engine (8,)
+2015-10-23 23:47:28,954 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:28,954 INFO sqlalchemy.engine.base.Engine (2L,)
+2015-10-23 23:47:28,956 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:28,956 INFO sqlalchemy.engine.base.Engine (3L,)
+2015-10-23 23:47:28,957 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:28,957 INFO sqlalchemy.engine.base.Engine (1L,)
+2015-10-23 23:47:28,959 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:28,959 INFO sqlalchemy.engine.base.Engine (11L,)
+2015-10-23 23:47:28,960 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:28,960 INFO sqlalchemy.engine.base.Engine (10L,)
+2015-10-23 23:47:28,962 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:28,963 INFO sqlalchemy.engine.base.Engine (8L,)
+2015-10-23 23:47:28,965 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:28,965 INFO sqlalchemy.engine.base.Engine (7L,)
+2015-10-23 23:47:28,969 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:28,969 INFO sqlalchemy.engine.base.Engine (6L,)
+2015-10-23 23:47:28,969 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:28,970 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:28,971 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:28,971 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:28 +0800] "GET / HTTP/1.1" 200 5490 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 50ms
+127.0.0.1 - - [23/Oct/2015:23:47:29 +0800] "GET /static/touxiang.jpg HTTP/1.1" 200 22953 "http://0.0.0.0/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 8ms
+127.0.0.1 - - [23/Oct/2015:23:47:29 +0800] "GET /favicon.ico HTTP/1.1" 404 305 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 12ms
+2015-10-23 23:47:31,450 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:31,451 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article 
+WHERE EXISTS (SELECT 1 
+FROM article_tag, tag 
+WHERE article.id = article_tag.article_id AND tag.id = article_tag.tag_id AND tag.name = %s)) AS anon_1
+2015-10-23 23:47:31,451 INFO sqlalchemy.engine.base.Engine ('mysql\xe5\xae\x9e\xe8\xb7\xb5',)
+2015-10-23 23:47:31,453 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:31,454 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.create_time AS article_create_time 
+FROM article 
+WHERE EXISTS (SELECT 1 
+FROM article_tag, tag 
+WHERE article.id = article_tag.article_id AND tag.id = article_tag.tag_id AND tag.name = %s) ORDER BY article.create_time DESC
+2015-10-23 23:47:31,454 INFO sqlalchemy.engine.base.Engine ('mysql\xe5\xae\x9e\xe8\xb7\xb5',)
+2015-10-23 23:47:31,458 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:31,458 INFO sqlalchemy.engine.base.Engine (2L,)
+2015-10-23 23:47:31,460 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:31,460 INFO sqlalchemy.engine.base.Engine (1L,)
+2015-10-23 23:47:31,460 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:31,461 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:31,461 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:31,461 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:31 +0800] "GET /tag/mysql%E5%AE%9E%E8%B7%B5/1/ HTTP/1.1" 200 3767 "http://0.0.0.0/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 37ms
+2015-10-23 23:47:33,015 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:33,017 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article 
+WHERE EXISTS (SELECT 1 
+FROM article_tag, tag 
+WHERE article.id = article_tag.article_id AND tag.id = article_tag.tag_id AND tag.name = %s)) AS anon_1
+2015-10-23 23:47:33,017 INFO sqlalchemy.engine.base.Engine ('mysql\xe5\xae\x9e\xe8\xb7\xb5',)
+2015-10-23 23:47:33,019 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:33,019 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.create_time AS article_create_time 
+FROM article 
+WHERE EXISTS (SELECT 1 
+FROM article_tag, tag 
+WHERE article.id = article_tag.article_id AND tag.id = article_tag.tag_id AND tag.name = %s) ORDER BY article.create_time DESC
+2015-10-23 23:47:33,019 INFO sqlalchemy.engine.base.Engine ('mysql\xe5\xae\x9e\xe8\xb7\xb5',)
+2015-10-23 23:47:33,021 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:33,021 INFO sqlalchemy.engine.base.Engine (2L,)
+2015-10-23 23:47:33,023 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:33,023 INFO sqlalchemy.engine.base.Engine (1L,)
+2015-10-23 23:47:33,023 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:33,024 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:33,024 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:33,024 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:33 +0800] "GET /tag/mysql%E5%AE%9E%E8%B7%B5/1/ HTTP/1.1" 200 3767 "http://0.0.0.0/tag/mysql%E5%AE%9E%E8%B7%B5/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 17ms
+2015-10-23 23:47:34,491 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:34,492 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article 
+WHERE EXISTS (SELECT 1 
+FROM article_tag, tag 
+WHERE article.id = article_tag.article_id AND tag.id = article_tag.tag_id AND tag.name = %s)) AS anon_1
+2015-10-23 23:47:34,492 INFO sqlalchemy.engine.base.Engine ('\xe8\xb7\x9f\xe5\x93\xa5\xe5\xad\xa6python',)
+2015-10-23 23:47:34,494 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:34,495 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.create_time AS article_create_time 
+FROM article 
+WHERE EXISTS (SELECT 1 
+FROM article_tag, tag 
+WHERE article.id = article_tag.article_id AND tag.id = article_tag.tag_id AND tag.name = %s) ORDER BY article.create_time DESC
+2015-10-23 23:47:34,495 INFO sqlalchemy.engine.base.Engine ('\xe8\xb7\x9f\xe5\x93\xa5\xe5\xad\xa6python',)
+2015-10-23 23:47:34,497 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:34,497 INFO sqlalchemy.engine.base.Engine (3L,)
+2015-10-23 23:47:34,499 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:34,499 INFO sqlalchemy.engine.base.Engine (1L,)
+2015-10-23 23:47:34,500 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:34,500 INFO sqlalchemy.engine.base.Engine (12L,)
+2015-10-23 23:47:34,501 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:34,502 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:34,502 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:34,502 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:34 +0800] "GET /tag/%E8%B7%9F%E5%93%A5%E5%AD%A6python/1/ HTTP/1.1" 200 4146 "http://0.0.0.0/tag/mysql%E5%AE%9E%E8%B7%B5/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 19ms
+127.0.0.1 - - [23/Oct/2015:23:47:36 +0800] "GET /category/mysql%E6%95%99%E7%A8%8B/1 HTTP/1.1" 301 464 "http://0.0.0.0/tag/%E8%B7%9F%E5%93%A5%E5%AD%A6python/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 15ms
+2015-10-23 23:47:36,726 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:36,726 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE category.name = %s) AS anon_1
+2015-10-23 23:47:36,726 INFO sqlalchemy.engine.base.Engine ('mysql\xe6\x95\x99\xe7\xa8\x8b',)
+2015-10-23 23:47:36,728 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:36,729 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.create_time AS article_create_time 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE category.name = %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:36,729 INFO sqlalchemy.engine.base.Engine ('mysql\xe6\x95\x99\xe7\xa8\x8b', 8)
+2015-10-23 23:47:36,731 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:36,731 INFO sqlalchemy.engine.base.Engine (11L,)
+2015-10-23 23:47:36,732 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:36,732 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:36,733 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:36,733 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:36 +0800] "GET /category/mysql%E6%95%99%E7%A8%8B/1/ HTTP/1.1" 200 3193 "http://0.0.0.0/tag/%E8%B7%9F%E5%93%A5%E5%AD%A6python/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 10ms
+127.0.0.1 - - [23/Oct/2015:23:47:37 +0800] "GET /category/python%E6%95%99%E7%A8%8B/1 HTTP/1.1" 301 467 "http://0.0.0.0/category/mysql%E6%95%99%E7%A8%8B/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 3ms
+2015-10-23 23:47:37,620 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:37,621 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE category.name = %s) AS anon_1
+2015-10-23 23:47:37,621 INFO sqlalchemy.engine.base.Engine ('python\xe6\x95\x99\xe7\xa8\x8b',)
+2015-10-23 23:47:37,623 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:37,626 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.create_time AS article_create_time 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE category.name = %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:37,626 INFO sqlalchemy.engine.base.Engine ('python\xe6\x95\x99\xe7\xa8\x8b', 8)
+2015-10-23 23:47:37,628 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:37,628 INFO sqlalchemy.engine.base.Engine (2L,)
+2015-10-23 23:47:37,630 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:37,630 INFO sqlalchemy.engine.base.Engine (3L,)
+2015-10-23 23:47:37,632 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:37,632 INFO sqlalchemy.engine.base.Engine (1L,)
+2015-10-23 23:47:37,634 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:37,634 INFO sqlalchemy.engine.base.Engine (10L,)
+2015-10-23 23:47:37,636 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:37,636 INFO sqlalchemy.engine.base.Engine (7L,)
+2015-10-23 23:47:37,638 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:37,638 INFO sqlalchemy.engine.base.Engine (6L,)
+2015-10-23 23:47:37,639 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:37,640 INFO sqlalchemy.engine.base.Engine (5L,)
+2015-10-23 23:47:37,641 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:37,641 INFO sqlalchemy.engine.base.Engine (4L,)
+2015-10-23 23:47:37,642 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:37,643 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:37,643 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:37,643 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:37 +0800] "GET /category/python%E6%95%99%E7%A8%8B/1/ HTTP/1.1" 200 5502 "http://0.0.0.0/category/mysql%E6%95%99%E7%A8%8B/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 46ms
+2015-10-23 23:47:39,437 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:39,439 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:39,439 INFO sqlalchemy.engine.base.Engine ('2',)
+2015-10-23 23:47:39,441 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:39,443 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:39,444 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:39,444 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:47:39,447 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:39,447 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:39,447 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:47:39,449 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:39,449 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:39,449 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:39 +0800] "GET /article/detail/2/ HTTP/1.1" 200 2984 "http://0.0.0.0/category/python%E6%95%99%E7%A8%8B/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 21ms
+2015-10-23 23:47:40,909 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:40,911 INFO sqlalchemy.engine.base.Engine SELECT count(*) AS count_1 
+FROM (SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE category.name = %s) AS anon_1
+2015-10-23 23:47:40,911 INFO sqlalchemy.engine.base.Engine ('python\xe6\x95\x99\xe7\xa8\x8b',)
+2015-10-23 23:47:40,913 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:40,913 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.create_time AS article_create_time 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE category.name = %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:40,913 INFO sqlalchemy.engine.base.Engine ('python\xe6\x95\x99\xe7\xa8\x8b', 8)
+2015-10-23 23:47:40,915 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:40,915 INFO sqlalchemy.engine.base.Engine (2L,)
+2015-10-23 23:47:40,917 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:40,917 INFO sqlalchemy.engine.base.Engine (3L,)
+2015-10-23 23:47:40,919 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:40,919 INFO sqlalchemy.engine.base.Engine (1L,)
+2015-10-23 23:47:40,920 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:40,920 INFO sqlalchemy.engine.base.Engine (10L,)
+2015-10-23 23:47:40,921 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:40,922 INFO sqlalchemy.engine.base.Engine (7L,)
+2015-10-23 23:47:40,923 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:40,923 INFO sqlalchemy.engine.base.Engine (6L,)
+2015-10-23 23:47:40,924 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:40,924 INFO sqlalchemy.engine.base.Engine (5L,)
+2015-10-23 23:47:40,925 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, article, article_tag AS article_tag_1 
+WHERE article.id = article_tag_1.article_id AND tag.id = article_tag_1.tag_id AND article.id = %s
+2015-10-23 23:47:40,925 INFO sqlalchemy.engine.base.Engine (4L,)
+2015-10-23 23:47:40,926 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:40,926 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:40,927 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:40,927 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:40 +0800] "GET /category/python%E6%95%99%E7%A8%8B/1/ HTTP/1.1" 200 5502 "http://0.0.0.0/article/detail/2/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 24ms
+2015-10-23 23:47:42,100 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:42,101 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:42,101 INFO sqlalchemy.engine.base.Engine ('3',)
+2015-10-23 23:47:42,102 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:42,103 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:42,104 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:42,105 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 55), 1)
+2015-10-23 23:47:42,106 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:42,107 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:42,107 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 55), 1)
+2015-10-23 23:47:42,108 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:42,109 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:42,109 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:42 +0800] "GET /article/detail/3/ HTTP/1.1" 200 3023 "http://0.0.0.0/category/python%E6%95%99%E7%A8%8B/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 11ms
+127.0.0.1 - - [23/Oct/2015:23:47:43 +0800] "GET /article/detail/1 HTTP/1.1" 301 410 "http://0.0.0.0/article/detail/3/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 18ms
+2015-10-23 23:47:43,542 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,542 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:43,542 INFO sqlalchemy.engine.base.Engine ('1',)
+2015-10-23 23:47:43,543 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:43,544 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,544 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:43,544 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 43), 1)
+2015-10-23 23:47:43,546 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,546 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:43,546 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 43), 1)
+2015-10-23 23:47:43,548 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,548 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:43,548 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:43 +0800] "GET /article/detail/1/ HTTP/1.1" 200 3027 "http://0.0.0.0/article/detail/3/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 9ms
+127.0.0.1 - - [23/Oct/2015:23:47:43 +0800] "GET /article/detail/10 HTTP/1.1" 301 413 "http://0.0.0.0/article/detail/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+2015-10-23 23:47:43,790 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,791 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:43,791 INFO sqlalchemy.engine.base.Engine ('10',)
+2015-10-23 23:47:43,792 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:43,793 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,793 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:43,793 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 9, 28, 15, 51), 1)
+2015-10-23 23:47:43,794 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,795 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:43,795 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 9, 28, 15, 51), 1)
+2015-10-23 23:47:43,796 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,796 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:43,796 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:43 +0800] "GET /article/detail/10/ HTTP/1.1" 200 3027 "http://0.0.0.0/article/detail/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 13ms
+127.0.0.1 - - [23/Oct/2015:23:47:43 +0800] "GET /article/detail/7 HTTP/1.1" 301 410 "http://0.0.0.0/article/detail/10/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+2015-10-23 23:47:43,924 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,925 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:43,925 INFO sqlalchemy.engine.base.Engine ('7',)
+2015-10-23 23:47:43,926 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:43,927 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,928 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:43,928 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(7, 1, 1, 0, 0), 1)
+2015-10-23 23:47:43,929 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,929 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:43,929 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(7, 1, 1, 0, 0), 1)
+2015-10-23 23:47:43,930 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:43,931 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:43,931 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:43 +0800] "GET /article/detail/7/ HTTP/1.1" 200 3026 "http://0.0.0.0/article/detail/10/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 8ms
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/6 HTTP/1.1" 301 410 "http://0.0.0.0/article/detail/7/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+2015-10-23 23:47:44,075 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,075 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:44,075 INFO sqlalchemy.engine.base.Engine ('6',)
+2015-10-23 23:47:44,077 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:44,079 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,080 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:44,081 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(6, 1, 1, 0, 0), 1)
+2015-10-23 23:47:44,082 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,083 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:44,083 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(6, 1, 1, 0, 0), 1)
+2015-10-23 23:47:44,085 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,085 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:44,085 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/6/ HTTP/1.1" 200 3023 "http://0.0.0.0/article/detail/7/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 12ms
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/5 HTTP/1.1" 301 410 "http://0.0.0.0/article/detail/6/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+2015-10-23 23:47:44,278 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,279 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:44,280 INFO sqlalchemy.engine.base.Engine ('5',)
+2015-10-23 23:47:44,280 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:44,281 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,282 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:44,282 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(5, 1, 1, 0, 0), 1)
+2015-10-23 23:47:44,283 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,284 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:44,284 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(5, 1, 1, 0, 0), 1)
+2015-10-23 23:47:44,285 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,285 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:44,285 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/5/ HTTP/1.1" 200 3023 "http://0.0.0.0/article/detail/6/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 9ms
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/4 HTTP/1.1" 301 410 "http://0.0.0.0/article/detail/5/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 3ms
+2015-10-23 23:47:44,497 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,499 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:44,499 INFO sqlalchemy.engine.base.Engine ('4',)
+2015-10-23 23:47:44,500 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:44,501 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,501 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:44,501 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(4, 1, 12, 0, 0), 1)
+2015-10-23 23:47:44,502 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,503 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:44,503 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(4, 1, 12, 0, 0), 1)
+2015-10-23 23:47:44,504 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,504 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:44,504 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/4/ HTTP/1.1" 200 3026 "http://0.0.0.0/article/detail/5/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 10ms
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/12 HTTP/1.1" 301 413 "http://0.0.0.0/article/detail/4/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 3ms
+2015-10-23 23:47:44,652 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,654 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:44,654 INFO sqlalchemy.engine.base.Engine ('12',)
+2015-10-23 23:47:44,655 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:44,656 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,656 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:44,656 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(3, 1, 15, 0, 0), 1)
+2015-10-23 23:47:44,658 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,658 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:44,658 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(3, 1, 15, 0, 0), 1)
+2015-10-23 23:47:44,660 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,660 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:44,660 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/12/ HTTP/1.1" 200 3029 "http://0.0.0.0/article/detail/4/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 10ms
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/9 HTTP/1.1" 301 410 "http://0.0.0.0/article/detail/12/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+2015-10-23 23:47:44,821 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,823 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:44,823 INFO sqlalchemy.engine.base.Engine ('9',)
+2015-10-23 23:47:44,825 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:44,826 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,826 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:44,827 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(1, 1, 1, 0, 0), 1)
+2015-10-23 23:47:44,828 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,829 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:44,829 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(1, 1, 1, 0, 0), 1)
+2015-10-23 23:47:44,830 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:44,831 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:44,831 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:44 +0800] "GET /article/detail/9/ HTTP/1.1" 200 2990 "http://0.0.0.0/article/detail/12/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 20ms
+2015-10-23 23:47:45,967 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:45,969 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:45,970 INFO sqlalchemy.engine.base.Engine ('12',)
+2015-10-23 23:47:45,971 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:45,974 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:45,975 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:45,976 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(3, 1, 15, 0, 0), 1)
+2015-10-23 23:47:45,978 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:45,979 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:45,979 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(3, 1, 15, 0, 0), 1)
+2015-10-23 23:47:45,981 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:45,981 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:45,982 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:45 +0800] "GET /article/detail/12/ HTTP/1.1" 200 3029 "http://0.0.0.0/article/detail/9/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 18ms
+2015-10-23 23:47:46,108 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,109 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:46,109 INFO sqlalchemy.engine.base.Engine ('4',)
+2015-10-23 23:47:46,110 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:46,111 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,112 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:46,112 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(4, 1, 12, 0, 0), 1)
+2015-10-23 23:47:46,114 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,115 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:46,115 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(4, 1, 12, 0, 0), 1)
+2015-10-23 23:47:46,118 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,118 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:46,118 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:46 +0800] "GET /article/detail/4/ HTTP/1.1" 200 3026 "http://0.0.0.0/article/detail/12/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 12ms
+2015-10-23 23:47:46,249 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,249 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:46,249 INFO sqlalchemy.engine.base.Engine ('5',)
+2015-10-23 23:47:46,250 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:46,251 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,252 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:46,252 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(5, 1, 1, 0, 0), 1)
+2015-10-23 23:47:46,253 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,254 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:46,254 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(5, 1, 1, 0, 0), 1)
+2015-10-23 23:47:46,255 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,255 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:46,256 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:46 +0800] "GET /article/detail/5/ HTTP/1.1" 200 3023 "http://0.0.0.0/article/detail/4/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 8ms
+2015-10-23 23:47:46,401 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,401 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:46,402 INFO sqlalchemy.engine.base.Engine ('6',)
+2015-10-23 23:47:46,402 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:46,405 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,406 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:46,407 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(6, 1, 1, 0, 0), 1)
+2015-10-23 23:47:46,408 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,409 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:46,409 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(6, 1, 1, 0, 0), 1)
+2015-10-23 23:47:46,411 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,412 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:46,412 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:46 +0800] "GET /article/detail/6/ HTTP/1.1" 200 3023 "http://0.0.0.0/article/detail/5/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 13ms
+2015-10-23 23:47:46,561 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,563 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:46,563 INFO sqlalchemy.engine.base.Engine ('7',)
+2015-10-23 23:47:46,564 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:46,565 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,565 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:46,565 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(7, 1, 1, 0, 0), 1)
+2015-10-23 23:47:46,567 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,567 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:46,568 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(7, 1, 1, 0, 0), 1)
+2015-10-23 23:47:46,569 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,569 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:46,569 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:46 +0800] "GET /article/detail/7/ HTTP/1.1" 200 3026 "http://0.0.0.0/article/detail/6/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 11ms
+2015-10-23 23:47:46,716 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,717 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:46,717 INFO sqlalchemy.engine.base.Engine ('10',)
+2015-10-23 23:47:46,718 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:46,719 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,720 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:46,720 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 9, 28, 15, 51), 1)
+2015-10-23 23:47:46,721 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,722 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:46,722 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 9, 28, 15, 51), 1)
+2015-10-23 23:47:46,724 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,724 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:46,724 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:46 +0800] "GET /article/detail/10/ HTTP/1.1" 200 3027 "http://0.0.0.0/article/detail/7/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 10ms
+2015-10-23 23:47:46,860 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,861 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:46,862 INFO sqlalchemy.engine.base.Engine ('1',)
+2015-10-23 23:47:46,862 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:46,864 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,864 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:46,864 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 43), 1)
+2015-10-23 23:47:46,866 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,867 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:46,867 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 43), 1)
+2015-10-23 23:47:46,868 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:46,868 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:46,868 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:46 +0800] "GET /article/detail/1/ HTTP/1.1" 200 3027 "http://0.0.0.0/article/detail/10/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 10ms
+127.0.0.1 - - [23/Oct/2015:23:47:47 +0800] "GET /article/detail/3 HTTP/1.1" 301 410 "http://0.0.0.0/article/detail/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+2015-10-23 23:47:47,016 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,018 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:47,018 INFO sqlalchemy.engine.base.Engine ('3',)
+2015-10-23 23:47:47,020 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:47,022 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,023 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:47,023 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 55), 1)
+2015-10-23 23:47:47,025 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,027 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:47,027 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 55), 1)
+2015-10-23 23:47:47,032 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,032 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:47,032 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:47 +0800] "GET /article/detail/3/ HTTP/1.1" 200 3023 "http://0.0.0.0/article/detail/1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 20ms
+127.0.0.1 - - [23/Oct/2015:23:47:47 +0800] "GET /article/detail/2 HTTP/1.1" 301 410 "http://0.0.0.0/article/detail/3/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+2015-10-23 23:47:47,159 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,160 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:47,160 INFO sqlalchemy.engine.base.Engine ('2',)
+2015-10-23 23:47:47,162 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:47,163 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,163 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:47,163 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:47:47,165 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,165 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:47,165 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:47:47,166 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,167 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:47,167 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:47 +0800] "GET /article/detail/2/ HTTP/1.1" 200 2984 "http://0.0.0.0/article/detail/3/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 10ms
+2015-10-23 23:47:47,358 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,359 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:47:47,359 INFO sqlalchemy.engine.base.Engine ('3',)
+2015-10-23 23:47:47,359 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:47:47,360 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,361 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:47:47,361 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 55), 1)
+2015-10-23 23:47:47,362 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,362 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:47:47,362 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 12, 13, 55), 1)
+2015-10-23 23:47:47,364 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:47:47,366 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:47:47,366 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:47:47 +0800] "GET /article/detail/3/ HTTP/1.1" 200 3023 "http://0.0.0.0/article/detail/2/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 9ms
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:50:29 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+writing pidfile to pidfile
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:80).
+bind(): Address already in use [core/socket.c line 764]
+2015-10-23 23:50:35,014 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:50:35,015 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:50:35,015 INFO sqlalchemy.engine.base.Engine ('2',)
+2015-10-23 23:50:35,016 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:50:35,017 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:50:35,017 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:50:35,018 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:50:35,019 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:50:35,019 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:50:35,020 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:50:35,021 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:50:35,021 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:50:35,021 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:50:35 +0800] "GET /article/detail/2/ HTTP/1.1" 200 2984 "http://0.0.0.0/article/detail/3/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 9ms
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:52:03 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+writing pidfile to pidfile
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:80).
+bind(): Address already in use [core/socket.c line 764]
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:52:35 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+writing pidfile to pidfile
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:80).
+bind(): Address already in use [core/socket.c line 764]
+2015-10-23 23:52:49,872 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:52:49,873 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:52:49,874 INFO sqlalchemy.engine.base.Engine ('2',)
+2015-10-23 23:52:49,875 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:52:49,876 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:52:49,876 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:52:49,876 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:52:49,878 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:52:49,878 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:52:49,878 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:52:49,880 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:52:49,881 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:52:49,881 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:52:49 +0800] "GET /article/detail/2/ HTTP/1.1" 200 2984 "http://0.0.0.0/article/detail/3/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 12ms
+127.0.0.1 - - [23/Oct/2015:23:52:49 +0800] "GET /static/touxiang.jpg HTTP/1.1" 304 189 "http://0.0.0.0/article/detail/2/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 5ms
+2015-10-23 23:52:50,726 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:52:50,727 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category, category.name AS category_name 
+FROM article INNER JOIN category ON category.id = article.category 
+WHERE article.id = %s
+2015-10-23 23:52:50,727 INFO sqlalchemy.engine.base.Engine ('2',)
+2015-10-23 23:52:50,728 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2015-10-23 23:52:50,729 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:52:50,729 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time > %s ORDER BY article.create_time 
+ LIMIT %s
+2015-10-23 23:52:50,729 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:52:50,731 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:52:50,731 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title 
+FROM article 
+WHERE article.category = %s AND article.create_time < %s ORDER BY article.create_time DESC 
+ LIMIT %s
+2015-10-23 23:52:50,731 INFO sqlalchemy.engine.base.Engine (1L, datetime.datetime(2015, 10, 23, 13, 55), 1)
+2015-10-23 23:52:50,733 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:52:50,733 INFO sqlalchemy.engine.base.Engine SELECT category.name AS category_name, count(%s) AS count 
+FROM category, article 
+WHERE article.category = category.id GROUP BY category.name
+2015-10-23 23:52:50,733 INFO sqlalchemy.engine.base.Engine (<class 'model.Article'>,)
+127.0.0.1 - - [23/Oct/2015:23:52:50 +0800] "GET /article/detail/2/ HTTP/1.1" 200 2984 "http://0.0.0.0/article/detail/3/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 10ms
+127.0.0.1 - - [23/Oct/2015:23:52:50 +0800] "GET /static/touxiang.jpg HTTP/1.1" 304 189 "http://0.0.0.0/article/detail/2/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:53:34 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+writing pidfile to pidfile
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:35904 (port auto-assigned) fd 6
+Python version: 2.7.8 (default, Jun 18 2015, 18:58:15)  [GCC 4.9.1]
+Python main interpreter initialized at 0x1940310
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 1048576 bytes
+mapped 17117105 bytes (16715 KB) for 12 cores
+*** Operational MODE: preforking+threaded ***
+2015-10-23 23:53:34,269 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2015-10-23 23:53:34,269 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,270 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2015-10-23 23:53:34,270 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,271 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
+2015-10-23 23:53:34,271 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,272 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:53:34,272 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,272 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:53:34,272 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,273 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
+2015-10-23 23:53:34,273 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,274 INFO sqlalchemy.engine.base.Engine DESCRIBE `category`
+2015-10-23 23:53:34,274 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,274 INFO sqlalchemy.engine.base.Engine DESCRIBE `article`
+2015-10-23 23:53:34,274 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,275 INFO sqlalchemy.engine.base.Engine DESCRIBE `tag`
+2015-10-23 23:53:34,275 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:53:34,276 INFO sqlalchemy.engine.base.Engine DESCRIBE `article_tag`
+2015-10-23 23:53:34,276 INFO sqlalchemy.engine.base.Engine ()
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1940310 pid: 6622 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6622)
+spawned uWSGI worker 1 (pid: 6626, cores: 3)
+spawned uWSGI worker 2 (pid: 6627, cores: 3)
+spawned uWSGI worker 3 (pid: 6628, cores: 3)
+spawned uWSGI worker 4 (pid: 6629, cores: 3)
+spawned uWSGI http 1 (pid: 6632)
+unable to stat() logs/.touch_log_rotate.tmp, events will be triggered as soon as the file is created
+gateway "uWSGI http 1" has been buried (pid: 6632)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 6626)...
+Gracefully killing worker 3 (pid: 6628)...
+Gracefully killing worker 2 (pid: 6627)...
+Gracefully killing worker 4 (pid: 6629)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/q/blog
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (127.0.0.1:35904)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from conf/uwsgi.conf
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:54:33 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 9
+uwsgi socket 0 bound to TCP address 127.0.0.1:56922 (port auto-assigned) fd 8
+Python version: 2.7.8 (default, Jun 18 2015, 18:58:15)  [GCC 4.9.1]
+Python main interpreter initialized at 0xb231e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 1048576 bytes
+mapped 17117105 bytes (16715 KB) for 12 cores
+*** Operational MODE: preforking+threaded ***
+2015-10-23 23:54:33,867 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2015-10-23 23:54:33,867 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,868 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2015-10-23 23:54:33,868 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,869 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
+2015-10-23 23:54:33,869 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,870 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:54:33,870 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,870 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:54:33,870 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,871 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
+2015-10-23 23:54:33,871 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,871 INFO sqlalchemy.engine.base.Engine DESCRIBE `category`
+2015-10-23 23:54:33,872 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,872 INFO sqlalchemy.engine.base.Engine DESCRIBE `article`
+2015-10-23 23:54:33,872 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,873 INFO sqlalchemy.engine.base.Engine DESCRIBE `tag`
+2015-10-23 23:54:33,873 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:33,873 INFO sqlalchemy.engine.base.Engine DESCRIBE `article_tag`
+2015-10-23 23:54:33,873 INFO sqlalchemy.engine.base.Engine ()
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xb231e0 pid: 6622 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 6622)
+spawned uWSGI worker 1 (pid: 6671, cores: 3)
+spawned uWSGI worker 2 (pid: 6672, cores: 3)
+spawned uWSGI worker 3 (pid: 6673, cores: 3)
+spawned uWSGI worker 4 (pid: 6674, cores: 3)
+spawned uWSGI http 1 (pid: 6676)
+unable to stat() logs/.touch_log_rotate.tmp, events will be triggered as soon as the file is created
+gateway "uWSGI http 1" has been buried (pid: 6676)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 6671)...
+Gracefully killing worker 2 (pid: 6672)...
+Gracefully killing worker 4 (pid: 6674)...
+Gracefully killing worker 3 (pid: 6673)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/q/blog
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 8 mapped to socket 0 (127.0.0.1:56922)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from conf/uwsgi.conf
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:54:36 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 9
+uwsgi socket 0 bound to TCP address 127.0.0.1:43826 (port auto-assigned) fd 7
+Python version: 2.7.8 (default, Jun 18 2015, 18:58:15)  [GCC 4.9.1]
+Python main interpreter initialized at 0x11a31e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 1048576 bytes
+mapped 17117105 bytes (16715 KB) for 12 cores
+*** Operational MODE: preforking+threaded ***
+2015-10-23 23:54:36,384 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2015-10-23 23:54:36,384 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,385 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2015-10-23 23:54:36,385 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,385 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
+2015-10-23 23:54:36,385 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,386 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:54:36,386 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,387 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:54:36,387 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,388 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
+2015-10-23 23:54:36,388 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,389 INFO sqlalchemy.engine.base.Engine DESCRIBE `category`
+2015-10-23 23:54:36,389 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,390 INFO sqlalchemy.engine.base.Engine DESCRIBE `article`
+2015-10-23 23:54:36,390 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,390 INFO sqlalchemy.engine.base.Engine DESCRIBE `tag`
+2015-10-23 23:54:36,390 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:36,391 INFO sqlalchemy.engine.base.Engine DESCRIBE `article_tag`
+2015-10-23 23:54:36,391 INFO sqlalchemy.engine.base.Engine ()
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x11a31e0 pid: 6622 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 6622)
+spawned uWSGI worker 1 (pid: 6689, cores: 3)
+spawned uWSGI worker 2 (pid: 6690, cores: 3)
+spawned uWSGI worker 3 (pid: 6691, cores: 3)
+spawned uWSGI worker 4 (pid: 6692, cores: 3)
+spawned uWSGI http 1 (pid: 6695)
+unable to stat() logs/.touch_log_rotate.tmp, events will be triggered as soon as the file is created
+*** Starting uWSGI 2.0.11.1 (64bit) on [Fri Oct 23 23:54:53 2015] ***
+compiled with version: 4.8.2 on 09 September 2015 16:33:05
+os: Linux-3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+nodename: brianyang-Latitude-E5440
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/q/blog
+writing pidfile to pidfile
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 62953
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:10086 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:37613 (port auto-assigned) fd 6
+Python version: 2.7.8 (default, Jun 18 2015, 18:58:15)  [GCC 4.9.1]
+Python main interpreter initialized at 0x17f0310
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 1048576 bytes
+mapped 2365566 bytes (2310 KB) for 1 cores
+*** Operational MODE: single process ***
+2015-10-23 23:54:54,066 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
+2015-10-23 23:54:54,066 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,067 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
+2015-10-23 23:54:54,067 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,067 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
+2015-10-23 23:54:54,067 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,068 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:54:54,068 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,068 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2015-10-23 23:54:54,068 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,069 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
+2015-10-23 23:54:54,069 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,070 INFO sqlalchemy.engine.base.Engine DESCRIBE `category`
+2015-10-23 23:54:54,070 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,071 INFO sqlalchemy.engine.base.Engine DESCRIBE `article`
+2015-10-23 23:54:54,071 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,071 INFO sqlalchemy.engine.base.Engine DESCRIBE `tag`
+2015-10-23 23:54:54,071 INFO sqlalchemy.engine.base.Engine ()
+2015-10-23 23:54:54,072 INFO sqlalchemy.engine.base.Engine DESCRIBE `article_tag`
+2015-10-23 23:54:54,072 INFO sqlalchemy.engine.base.Engine ()
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x17f0310 pid: 6717 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6717)
+spawned uWSGI worker 1 (pid: 6721, cores: 1)
+spawned uWSGI http 1 (pid: 6722)
+unable to stat() logs/.touch_log_rotate.tmp, events will be triggered as soon as the file is created
+127.0.0.1 - - [23/Oct/2015:23:55:08 +0800] "GET /admin HTTP/1.1" 401 122 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+127.0.0.1 - - [23/Oct/2015:23:55:12 +0800] "GET /admin HTTP/1.1" 401 122 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+127.0.0.1 - - [23/Oct/2015:23:55:18 +0800] "GET /admin HTTP/1.1" 401 122 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+127.0.0.1 - - [23/Oct/2015:23:55:21 +0800] "GET /admin HTTP/1.1" 401 122 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin HTTP/1.1" 301 395 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 17ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin/ HTTP/1.1" 200 2660 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 60ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin/static/bootstrap/bootstrap3/css/bootstrap.min.css?v=3.3.5 HTTP/1.1" 200 122830 "http://0.0.0.0:10086/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 6ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin/static/bootstrap/bootstrap3/css/bootstrap-theme.min.css?v=3.3.5 HTTP/1.1" 200 23645 "http://0.0.0.0:10086/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 7ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin/static/admin/css/bootstrap3/admin.css?v=1.1.1 HTTP/1.1" 200 2554 "http://0.0.0.0:10086/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 7ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin/static/vendor/jquery.min.js?v=2.1.4 HTTP/1.1" 200 84632 "http://0.0.0.0:10086/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 3ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin/static/bootstrap/bootstrap3/js/bootstrap.min.js?v=3.3.5 HTTP/1.1" 200 37102 "http://0.0.0.0:10086/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin/static/vendor/moment.min.js?v=2.9.0 HTTP/1.1" 200 35024 "http://0.0.0.0:10086/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /admin/static/vendor/select2/select2.min.js?v=3.5.2 HTTP/1.1" 200 66882 "http://0.0.0.0:10086/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+127.0.0.1 - - [23/Oct/2015:23:55:24 +0800] "GET /favicon.ico HTTP/1.1" 404 305 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 0ms
+2015-10-23 23:55:26,317 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2015-10-23 23:55:26,318 INFO sqlalchemy.engine.base.Engine SELECT count(%s) AS count_1 
+FROM article
+2015-10-23 23:55:26,318 INFO sqlalchemy.engine.base.Engine ('*',)
+2015-10-23 23:55:26,320 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article 
+ LIMIT %s
+2015-10-23 23:55:26,320 INFO sqlalchemy.engine.base.Engine (20,)
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/article/ HTTP/1.1" 200 29043 "http://0.0.0.0:10086/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 173ms
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/static/vendor/select2/select2.css?v=3.5.2 HTTP/1.1" 200 19745 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/static/vendor/select2/select2-bootstrap3.css?v=1.4.6 HTTP/1.1" 200 10700 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/static/vendor/bootstrap-daterangepicker/daterangepicker-bs3.css?v=1.3.22 HTTP/1.1" 200 7116 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/static/admin/js/filters.js?v=1.0.0 HTTP/1.1" 200 7521 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/static/vendor/bootstrap-daterangepicker/daterangepicker.js?v=1.3.22 HTTP/1.1" 200 55838 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 1ms
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/static/admin/js/form.js?v=1.0.0 HTTP/1.1" 200 19843 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 4ms
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/static/admin/js/actions.js?v=1.0.0 HTTP/1.1" 200 1252 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/static/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18317 "http://0.0.0.0:10086/admin/static/bootstrap/bootstrap3/css/bootstrap.min.css?v=3.3.5" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 2ms
+2015-10-23 23:55:26,686 INFO sqlalchemy.engine.base.Engine SELECT count(%s) AS count_1 
+FROM article
+2015-10-23 23:55:26,686 INFO sqlalchemy.engine.base.Engine ('*',)
+2015-10-23 23:55:26,688 INFO sqlalchemy.engine.base.Engine SELECT article.id AS article_id, article.title AS article_title, article.content AS article_content, article.author AS article_author, article.create_time AS article_create_time, article.category AS article_category 
+FROM article 
+ LIMIT %s
+2015-10-23 23:55:26,688 INFO sqlalchemy.engine.base.Engine (20,)
+127.0.0.1 - - [23/Oct/2015:23:55:26 +0800] "GET /admin/article/ HTTP/1.1" 200 29043 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 25ms
+2015-10-23 23:55:29,189 INFO sqlalchemy.engine.base.Engine SELECT count(%s) AS count_1 
+FROM tag
+2015-10-23 23:55:29,190 INFO sqlalchemy.engine.base.Engine ('*',)
+2015-10-23 23:55:29,191 INFO sqlalchemy.engine.base.Engine SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag 
+ LIMIT %s
+2015-10-23 23:55:29,191 INFO sqlalchemy.engine.base.Engine (20,)
+127.0.0.1 - - [23/Oct/2015:23:55:29 +0800] "GET /admin/tag/ HTTP/1.1" 200 9962 "http://0.0.0.0:10086/admin/article/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/39.0.2171.65 Chrome/39.0.2171.65 Safari/537.36" 12ms

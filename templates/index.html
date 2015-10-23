@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="list-group">
+    {% for article in articles %}
+    <div class="list-group-item">
+        <h3 class="list-group-item-heading"><a href="/article/detail/{{article.id}}/">{{article.title}}</a></h3>
+
+        <p class="list-group-item-text text-right">
+            <small>{{article.create_time}}</small>
+        </p>
+        {% for tag in article.tags %}
+        <a href="/tag/{{tag.name}}/1/"><span class="label label-success">{{tag.name}}</span></a>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    <nav>
+        <ul class="pager">
+            {% if pre!='null' %}
+            <li><a href="{{pre}}">上一页</a></li>
+            {% endif %}
+            {% if behind!='null' %}
+            <li><a href="{{behind}}">下一页</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+
+{% endblock body %}
