@@ -53,12 +53,12 @@ def parse_image(content):
     :return:
     """
 
-    def parse_image(matched):
+    def parse(matched):
         img = matched.group('img')
         alt = matched.group('alt')
         img = img.replace('\"', '\'')
         return "<img src=\"%s\" alt=\"%s\"/>" % (img, alt)
 
-    return image_re.sub(parse_image, content)
+    return image_re.sub(parse, content)
 
 
