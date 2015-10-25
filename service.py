@@ -12,10 +12,12 @@ def get_articles(page_num, page_size, category=None, tag=None):
             Category.name == category).order_by(Article.create_time.desc())[
                    (page_num - 1) * page_size:page_num * page_size]
     elif tag is not None:
-        articles = session.query(Article.id, Article.title, Article.create_time).filter(
-            Article.tags.any(Tag.name == tag)).order_by(Article.create_time.desc()).all()
+        articles = session.query(Article.id, Article.title, Article.create_time).join(Category).filter(
+            Article.tags.any(Tag.name == tag)).filter(Article.category is not None).order_by(
+            Article.create_time.desc()).all()
     else:
-        articles = session.query(Article.id, Article.title, Article.create_time).order_by(Article.create_time.desc())[
+        articles = session.query(Article.id, Article.title, Article.create_time).join(Category).filter(
+            Article.category is not None).order_by(Article.create_time.desc())[
                    (page_num - 1) * page_size:page_num * page_size]
     parsed_articled = []
     for article in articles:
@@ -40,7 +42,7 @@ def get_articles_count(category=None, tag=None):
 
 def get_article(article_id):
     session = Session()
-    article, category = session.query(Article, Category.name).join(Category).filter(Article.id == article_id).one()
+    article, category = session.query(Article, Category.name).join(Category).filter(Article.id == article_id).first()
     session.close()
     return article, category
 
