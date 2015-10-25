@@ -3,6 +3,7 @@ __author__ = 'brianyang'
 from model import Article, Tag, Category
 from model import Session
 from sqlalchemy import func
+from util import parse_content
 
 
 def get_articles(page_num, page_size, category=None, tag=None):
@@ -44,6 +45,7 @@ def get_article(article_id):
     session = Session()
     article, category = session.query(Article, Category.name).join(Category).filter(Article.id == article_id).first()
     session.close()
+    article.content = parse_content(article.content)
     return article, category
 
 

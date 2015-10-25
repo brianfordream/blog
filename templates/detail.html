@@ -2,12 +2,13 @@
 {% block body %}
 <h1>{{article.title}}</h1>
 <h5>作者:{{article.author}} - 发表时间:{{article.create_time}}</h5>
-<h6>分类:<a href="/category/{{category}}/1/">{{category}}</a></h6>
+<h5>分类:<a href="/category/{{category}}/1/">{{category}}</a></h5>
 {{ article.content|safe }}
+<hr>
 {% if pre_article.title != None %}
-<p>上一篇:<a href="../{{pre_article.id}}">{{ pre_article.title}}</a></p>
+<p><small>上一篇:<a href="../{{pre_article.id}}">{{ pre_article.title}}</a></small></p>
 {% endif %}
 {% if next_article.title != None %}
-<p>下一篇:<a href="../{{next_article.id}}">{{ next_article.title}}</a></p>
+<p><small>下一篇:<a href="../{{next_article.id}}">{{ next_article.title}}</a></small></p>
 {% endif %}
 {% endblock body %}

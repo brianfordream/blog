@@ -17,6 +17,10 @@
     <style>
         p {font-size:18px; word-wrap: break-word;word-break: break-all;}
         body {font-size:16px;}
+        img{
+            max-width:780px;
+            width:expression(document.body.clientWidth > 780? "780px": "auto" );
+            }
     </style>
 </head>
 <body>
@@ -31,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">心灵鸡汤已看够,来点干货最重要</a>
+            <a class="navbar-brand" href="/">看多了心灵鸡汤,不想来点干货么</a>
         </div>
     </div>
 </nav>
@@ -46,8 +50,7 @@
 
                     <p><span class="label label-info">好记性不如烂笔头</span></p>
 
-                    <p><span class="label label-success">乱炖,技术积累</span></p>
-                    <p><span class="label label-success">Python,Linux,SQL</span></p>
+                    <p><span class="label label-success">技术乱炖</span></p>
                 </li>
             </ul>
 
@@ -68,6 +71,10 @@
             {% endblock body %}
         </div>
     </div>
+</div>
+<div class="text-center">
+    <p class="text-warning">做一个有态度的程序员</p>
+    <p class="text-info"><small>Powered by Flask</small></p>
 </div>
 </body>
 </html>
