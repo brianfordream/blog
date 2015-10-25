@@ -16,7 +16,6 @@ class ArticleView(ModelView):
     column_display_all_relations = ('display_all_relations',
                                     'list_display_all_relations',
                                     True)
-    column_list = ('category',)
     can_view_details = True
     column_details_list = ('category',)
 
