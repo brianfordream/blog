@@ -28,5 +28,4 @@ admin.add_view(ArticleView(session))
 admin.add_view(TagView(session))
 admin.add_view(ModelView(Category, session))
 app.secret_key = 'key'
-session.close()
 #app.run(host='0.0.0.0', port=1024, debug=True)
