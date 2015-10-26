@@ -2,6 +2,9 @@
 __author__ = 'brianyang'
 
 import re
+import redis
+
+#redis_client = redis.Redis(host='localhost',port=6379,password='Djhd1234')
 
 
 def page_slice(url, total, page_num, page_size):
@@ -62,3 +65,5 @@ def parse_image(content):
     return image_re.sub(parse, content)
 
 
+def get_redis_pipeline():
+    return redis_client.pipeline()
