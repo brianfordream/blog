@@ -1,6 +1,6 @@
 # encoding: utf8
 __author__ = 'brianyang'
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, session, request, redirect
 from service import get_articles, get_article, get_categories, get_articles_count, get_next_article, get_pre_article
 from util import page_slice
 
@@ -58,3 +58,14 @@ def tag_classify(tag, page_num):
     articles = get_articles(tag=tag, page_num=page_num, page_size=page_size)
     categories = get_categories()
     return render_template('index.html', articles=articles, categories=categories, pre=pre, behind=behind)
+
+@blog.route('/admin/login/', methods=['POST'])
+def login():
+    params = request.form
+    name = params['name']
+    password = params['password']
+    if name == 'CoderBrian' and password == 'Yang199095()':
+        session['admin'] = 'admin'
+        return redirect('/admin/')
+    else:
+        return redirect('/admin/')
