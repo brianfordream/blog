@@ -1,7 +1,6 @@
 __author__ = 'brianyang'
 
 from flask_admin.contrib.sqla import ModelView
-
 from model import Tag, Article
 
 
@@ -22,3 +21,5 @@ class ArticleView(ModelView):
 
     def __init__(self, session, **kwargs):
         super(ArticleView, self).__init__(Article, session, **kwargs)
+
+
