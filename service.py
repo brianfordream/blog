@@ -37,6 +37,7 @@ def get_articles_count(category=None, tag=None):
         count = session.query(Article).filter(Article.tags.any(Tag.name == tag)).count()
     else:
         count = session.query(Article).count()
+    session.close()
     return count
 
 
@@ -52,6 +53,7 @@ def get_pre_article(article):
     result = session.query(Article.id, Article.title).filter(Article.category == article.category).filter(
         Article.create_time > article.create_time).order_by(
         Article.create_time).first()
+    session.close()
     if result is None:
         return None, None
     article_id, title = result
@@ -63,6 +65,7 @@ def get_next_article(article):
     result = session.query(Article.id, Article.title).filter(Article.category == article.category).filter(
         Article.create_time < article.create_time).order_by(
         Article.create_time.desc()).first()
+    session.close()
     if result is None:
         return None, None
     article_id, title = result
@@ -74,5 +77,6 @@ def get_categories():
     categories = session.query(Category.name, func.count(Article).label('count')).filter(
         Article.category == Category.id).group_by(
         Category.name).all()
+    session.close()
     return categories
 
