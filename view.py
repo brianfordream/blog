@@ -70,6 +70,6 @@ def login():
     else:
         return redirect('/admin/')
 
-@blog.route('/baidu-verify-8EFEEDDBF7.txt/')
+@blog.route('/baidu-verify-13733661B2.txt/')
 def baidu_verify():
-    return render_template('baidu-verify-8EFEEDDBF7.txt')
+    return render_template('baidu-verify-13733661B2.txt')
