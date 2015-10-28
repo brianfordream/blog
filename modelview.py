@@ -13,6 +13,7 @@ class TagView(ModelView):
 
 class ArticleView(ModelView):
     edit_template = 'edit.html'
+    create_template = 'create.html'
     column_filters = ('category', 'tags')
     column_display_all_relations = ('display_all_relations',
                                     'list_display_all_relations',
