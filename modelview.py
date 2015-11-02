@@ -20,7 +20,6 @@ class ArticleView(ModelView):
                                     'list_display_all_relations',
                                     True)
     column_list = ('title', 'create_time', 'category')
-    column_details_list = ('title', 'create_time', 'category',)
 
     def __init__(self, session, **kwargs):
         super(ArticleView, self).__init__(Article, session, **kwargs)
