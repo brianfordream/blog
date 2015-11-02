@@ -14,11 +14,12 @@ class TagView(ModelView):
 class ArticleView(ModelView):
     edit_template = 'edit.html'
     create_template = 'create.html'
+
     column_filters = ('category', 'tags')
     column_display_all_relations = ('display_all_relations',
                                     'list_display_all_relations',
                                     True)
-    column_details_list = ('title', 'content', 'create_time', 'category',)
+    column_details_list = ('title', 'create_time', 'category',)
 
     def __init__(self, session, **kwargs):
         super(ArticleView, self).__init__(Article, session, **kwargs)
