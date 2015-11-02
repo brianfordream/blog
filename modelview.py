@@ -19,6 +19,7 @@ class ArticleView(ModelView):
     column_display_all_relations = ('display_all_relations',
                                     'list_display_all_relations',
                                     True)
+    column_list = ('title', 'create_time', 'category')
     column_details_list = ('title', 'create_time', 'category',)
 
     def __init__(self, session, **kwargs):
