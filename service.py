@@ -51,6 +51,9 @@ article_detail_redis_key = 'article_detail'
 def get_article(article_id):
     redis_key = article_detail_redis_key + ':' + article_id
     article, category = redis_client.hmget(redis_key, 'article', 'category')
+    print 11
+    print article
+    print category
     if not article:
         session = Session()
         article, category = session.query(Article, Category.name).join(Category).filter(
