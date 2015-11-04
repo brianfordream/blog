@@ -3,6 +3,9 @@ __author__ = 'brianyang'
 from model import Article, Tag, Category
 from model import Session
 from sqlalchemy import func
+from util import get_redis_client
+
+redis_client = get_redis_client()
 
 
 def get_articles(page_num, page_size, category=None, tag=None):
@@ -41,10 +44,22 @@ def get_articles_count(category=None, tag=None):
     return count
 
 
+article_detail_expire_time = 3600
+article_detail_redis_key = 'article_detail'
+
+
 def get_article(article_id):
-    session = Session()
-    article, category = session.query(Article, Category.name).join(Category).filter(Article.id == article_id).first()
-    session.close()
+    redis_key = article_detail_redis_key + ':' + article_id
+    article, category = redis_client.hmget(redis_key, 'article', 'category')
+    if not article:
+        session = Session()
+        article, category = session.query(Article, Category.name).join(Category).filter(
+            Article.id == article_id).first()
+        redis_client.hmset(redis_key, {'article': article, 'category': category})
+        redis_client.expire(redis_key, article_detail_expire_time)
+        session.close()
+    else:
+        article = eval(article)
     return article, category
 
 
@@ -72,11 +87,24 @@ def get_next_article(article):
     return article_id, title
 
 
+categories_expire_time = 3600
+categories_redis_key = "categories_count"
+
+
 def get_categories():
-    session = Session()
-    categories = session.query(Category.name, func.count(Article).label('count')).filter(
-        Article.category == Category.id).group_by(
-        Category.name).all()
-    session.close()
+    categories_str = redis_client.get(categories_redis_key)
+    categories_list = eval(categories_str) if categories_str is not None else None
+    if not categories_list:
+        session = Session()
+        categories = session.query(Category.name, func.count(Article).label('count')).filter(
+            Article.category == Category.id).group_by(
+            Category.name).all()
+        redis_client.set(categories_redis_key, categories, categories_expire_time)
+        session.close()
+    else:
+        categories = []
+        for item in categories_list:
+            name, count = item
+            categories.append({'name': name, 'count': count})
     return categories
 

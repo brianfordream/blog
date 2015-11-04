@@ -3,6 +3,8 @@ __author__ = 'brianyang'
 from sqlalchemy import Column, String, Text, Integer, DateTime, Table, ForeignKey, create_engine
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+import re
+from datetime import datetime
 
 Base = declarative_base()
 Base.metadata.clear()
@@ -25,8 +27,19 @@ class Article(Base):
     tags = relationship('Tag', secondary=article_tag, backref='article')
     category = Column(Integer, ForeignKey('category.id'))
 
+    def __init__(self, id, title, content, author, create_time, tags, category):
+        self.id = id
+        self.title = title
+        self.content = content
+        self.author = author
+        self.create_time = datetime.strptime(create_time, "%Y-%m-%d %H:%M:%S")
+        self.tags = tags
+        self.category = category
+
     def __repr__(self):
-        return 'title:%s,author:%s,tags:%s' % (self.title, self.author, self.tags)
+        self.content = re.sub("'", r'"', self.content)
+        return 'Article(%d,"%s","""%s""","%s","%s", %s, %d)' % (
+            self.id, self.title, self.content, self.author, self.create_time, self.tags, self.category)
 
 
 class Tag(Base):
@@ -35,8 +48,11 @@ class Tag(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(16))
 
+    def __init__(self, name):
+        self.name = name
+
     def __repr__(self):
-        return 'tag:%s' % (self.name,)
+        return 'Tag("{}")'.format(self.name)
 
 
 class Category(Base):
