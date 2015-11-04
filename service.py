@@ -57,8 +57,8 @@ def get_article(article_id):
         session = Session()
         article, category = session.query(Article, Category.name).join(Category).filter(
             Article.id == article_id).first()
-        article.content = re.sub("\"", r'＂', article.content)
-        article.title = re.sub("\"", r'＂', article.title)
+        article.content = re.sub("\"\"\"", r'＂＂＂', article.content)
+        article.title = re.sub("\"\"\"", r'＂＂＂', article.title)
         redis_client.hmset(redis_key, {'article': article, 'category': category})
         redis_client.expire(redis_key, article_detail_expire_time)
         session.close()
