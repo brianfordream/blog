@@ -8,7 +8,7 @@ from datetime import datetime
 
 Base = declarative_base()
 Base.metadata.clear()
-engine = create_engine('mysql+mysqldb://root:199095@localhost/blog', echo=True, convert_unicode=True)
+engine = create_engine('mysql+mysqldb://root:199095@localhost/blog', echo=False, convert_unicode=True)
 Session = sessionmaker(bind=engine)
 
 article_tag = Table('article_tag', Base.metadata,
@@ -27,19 +27,16 @@ class Article(Base):
     tags = relationship('Tag', secondary=article_tag, backref='article')
     category = Column(Integer, ForeignKey('category.id'))
 
-    def __init__(self, id, title, content, author, create_time, tags, category):
+    def __init__(self, id=None, title=None, content=None, author=None, create_time=None):
         self.id = id
         self.title = title
         self.content = content
         self.author = author
         self.create_time = datetime.strptime(create_time, "%Y-%m-%d %H:%M:%S")
-        self.tags = tags
-        self.category = category
 
     def __repr__(self):
-        self.content = re.sub("'", r'"', self.content)
-        return 'Article(%d,"%s","""%s""","%s","%s", %s, %d)' % (
-            self.id, self.title, self.content, self.author, self.create_time, self.tags, self.category)
+        return 'Article(%d,"""%s""","""%s""", "%s","%s")' % (
+            self.id, self.title, self.content, self.author, self.create_time)
 
 
 class Tag(Base):
@@ -48,8 +45,9 @@ class Tag(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(16))
 
-    def __init__(self, name):
+    def __init__(self, name=None):
         self.name = name
+
 
     def __repr__(self):
         return 'Tag("{}")'.format(self.name)

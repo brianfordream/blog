@@ -1,5 +1,7 @@
+#encoding:utf8
 __author__ = 'brianyang'
 
+import re
 from model import Article, Tag, Category
 from model import Session
 from sqlalchemy import func
@@ -51,13 +53,12 @@ article_detail_redis_key = 'article_detail'
 def get_article(article_id):
     redis_key = article_detail_redis_key + ':' + article_id
     article, category = redis_client.hmget(redis_key, 'article', 'category')
-    print 11
-    print article
-    print category
     if not article:
         session = Session()
         article, category = session.query(Article, Category.name).join(Category).filter(
             Article.id == article_id).first()
+        article.content = re.sub("\"", r'＂', article.content)
+        article.title = re.sub("\"", r'＂', article.title)
         redis_client.hmset(redis_key, {'article': article, 'category': category})
         redis_client.expire(redis_key, article_detail_expire_time)
         session.close()
