@@ -27,16 +27,18 @@ class Article(Base):
     tags = relationship('Tag', secondary=article_tag, backref='article')
     category = Column(Integer, ForeignKey('category.id'))
 
-    def __init__(self, id=None, title=None, content=None, author=None, create_time=None):
+    def __init__(self, id=None, title=None, content=None, author=None, create_time=None, category=None, tags=None):
         self.id = id
         self.title = title
         self.content = content
         self.author = author
+        self.category = category
+        self.tags = tags
         self.create_time = datetime.strptime(create_time, "%Y-%m-%d %H:%M:%S")
 
     def __repr__(self):
-        return 'Article(%d,"""%s""","""%s""", "%s","%s")' % (
-            self.id, self.title, self.content, self.author, self.create_time)
+        return 'Article(%d,"""%s""","""%s""", "%s","%s", %d, %s)' % (
+            self.id, self.title, self.content, self.author, self.create_time, self.category, self.tags)
 
 
 class Tag(Base):
