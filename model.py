@@ -27,17 +27,19 @@ class Article(Base):
     tags = relationship('Tag', secondary=article_tag, backref='article')
     category = Column(Integer, ForeignKey('category.id'))
 
-    def __init__(self, id=None, title=None, content=None, author=None, create_time=None, category=''):
+    def __str__(self):
+        return "id:%d, title:%s" % (self.id, self.title)
+
+
+class ArticleRedis(object):
+    def __init__(self, id, title, content, author, create_time, tags, category_id):
         self.id = id
         self.title = title
         self.content = content
         self.author = author
-        self.category = category
-        self.create_time = datetime.strptime(create_time, "%Y-%m-%d %H:%M:%S")
-
-    def __repr__(self):
-        return 'Article(%d,"""%s""","""%s""", "%s","%s", %d)' % (
-            self.id, self.title, self.content, self.author, self.create_time, self.category)
+        self.create_time = create_time
+        self.tags = tags
+        self.category = category_id
 
 
 class Tag(Base):
