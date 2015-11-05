@@ -3,12 +3,12 @@ __author__ = 'brianyang'
 from sqlalchemy import Column, String, Text, Integer, DateTime, Table, ForeignKey, create_engine
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-import re
 from datetime import datetime
 
 Base = declarative_base()
 Base.metadata.clear()
-engine = create_engine('mysql+mysqldb://root:199095@localhost/blog', echo=False, convert_unicode=True)
+engine = create_engine('mysql+mysqldb://root:199095@localhost/blog', echo=False, convert_unicode=True, pool_size=10,
+                       pool_recycle=1800)
 Session = sessionmaker(bind=engine)
 
 article_tag = Table('article_tag', Base.metadata,
