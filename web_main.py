@@ -14,7 +14,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 app = Flask(__name__)
-app.debug = True
+app.debug = False
 
 app.register_blueprint(blog)
 
