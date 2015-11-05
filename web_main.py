@@ -18,11 +18,10 @@ app.debug = True
 
 app.register_blueprint(blog)
 
-db_session = Session()
 admin = Admin(app, name='flask_admin', template_mode='bootstrap3')
-admin.add_view(ArticleView(db_session))
-admin.add_view(TagView(db_session))
-admin.add_view(ModelView(Category, db_session))
+admin.add_view(ArticleView(Session()))
+admin.add_view(TagView(Session()))
+admin.add_view(ModelView(Category, Session()))
 
 app.secret_key = '\xbd$\x96\xb4\x80GYt"\x01\x9bk+"\x0c\xbd+\xc2\xf7A\xcb\xea\xee\x89/\xbe)4\xce-\xa3qbrian'
 #app.run(host='0.0.0.0', port=1998, debug=True)
