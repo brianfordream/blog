@@ -27,7 +27,7 @@ class Article(Base):
     tags = relationship('Tag', secondary=article_tag, backref='article')
     category = Column(Integer, ForeignKey('category.id'))
 
-    def __init__(self, id=None, title=None, content=None, author=None, create_time=None, category=None):
+    def __init__(self, id=None, title=None, content=None, author=None, create_time=None, category=''):
         self.id = id
         self.title = title
         self.content = content
