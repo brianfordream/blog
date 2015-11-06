@@ -1,8 +1,8 @@
-#encoding:utf8
+# encoding:utf8
 __author__ = 'brianyang'
 
 import re
-from model import Article, Tag, Category
+from model import Article, Tag, Category, ArticleRedis
 from model import Session
 from sqlalchemy import func
 from util import get_redis_client
@@ -52,18 +52,25 @@ article_detail_redis_key = 'article_detail'
 
 def get_article(article_id):
     redis_key = article_detail_redis_key + ':' + article_id
-    article, category = redis_client.hmget(redis_key, 'article', 'category')
-    if not article:
+    (art_id, article_title, article_content, article_author, article_create_time, article_tags, article_category_id,
+     article_category_name) = redis_client.hmget(
+        redis_key, 'id', 'title', 'content', 'author', 'create_time', 'tags', 'category_id', 'category_name')
+    if not art_id:
         session = Session()
         article, category = session.query(Article, Category.name).join(Category).filter(
             Article.id == article_id).first()
         article.content = re.sub("\"\"\"", r'＂＂＂', article.content)
         article.title = re.sub("\"\"\"", r'＂＂＂', article.title)
-        redis_client.hmset(redis_key, {'article': article, 'category': category})
+        redis_client.hmset(redis_key, {'id': article.id, 'title': article.title, 'content': article.content,
+                                       'author': article.author, 'create_time': article.create_time,
+                                       'tags': article.tags, 'category_id': article.category,
+                                       'category_name': category})
         redis_client.expire(redis_key, article_detail_expire_time)
         session.close()
     else:
-        article = eval(article)
+        article = ArticleRedis(art_id, article_title, article_content, article_author, article_create_time,
+                               article_tags, article_category_id)
+        category = article_category_name
     return article, category
 
 
