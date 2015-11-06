@@ -14,6 +14,8 @@ class TagView(ModelView):
 class ArticleView(ModelView):
     edit_template = 'edit.html'
     create_template = 'create.html'
+    page_size = 8
+    column_default_sort = ('create_time', True)
 
     column_filters = ('category', 'tags')
     column_display_all_relations = ('display_all_relations',
