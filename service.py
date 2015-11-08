@@ -27,7 +27,9 @@ def get_articles(page_num, page_size, category=None, tag=None):
     parsed_articled = []
     for article in articles:
         id, title, create_time = article
-        tags = session.query(Tag).filter(Article.tags).filter(Article.id == id).all()
+        #文章对应的标签，暂时禁用
+        #tags = session.query(Tag).filter(Article.tags).filter(Article.id == id).all()
+        tags = []
         parsed_articled.append({'id': id, 'title': title, 'create_time': create_time, 'tags': tags})
     session.close()
     return parsed_articled
