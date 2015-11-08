@@ -41,7 +41,7 @@ def get_articles_count(category=None, tag=None):
     elif tag is not None:
         count = session.query(Article).filter(Article.tags.any(Tag.name == tag)).count()
     else:
-        count = session.query(Article).count()
+        count = session.query(Article).filter(Article.category is not None).count()
     session.close()
     return count
 
