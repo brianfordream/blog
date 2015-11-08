@@ -28,7 +28,7 @@ def page_slice(url, total, page_num, page_size):
         return 'null', '{}/{}/'.format(url, behind)
     elif behind == -1:
         return '{}/{}/'.format(url, pre), 'null'
-    return '{}/{}/'.format(url, pre), '{}/'.format(url, behind)
+    return '{}/{}/'.format(url, pre), '{}/{}/'.format(url, behind)
 
 
 image_re = re.compile(r"\|img\|(?P<img>.*?)\|(?P<alt>.*?)\|")
