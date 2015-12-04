@@ -10,7 +10,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 blog = Blueprint(__file__, 'article')
-page_size = 16
+page_size = 15
 
 
 @blog.route('/')
