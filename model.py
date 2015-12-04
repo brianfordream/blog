@@ -21,7 +21,7 @@ class Article(Base):
     id = Column(Integer, primary_key=True)
     title = Column(String(256))
     content = Column(Text)
-    author = Column(String(16))
+    author = Column(String(64))
     create_time = Column(DateTime)
     tags = relationship('Tag', secondary=article_tag, backref='article')
     category = Column(Integer, ForeignKey('category.id'))
