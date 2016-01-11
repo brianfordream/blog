@@ -29,4 +29,4 @@ r = redis.StrictRedis(connection_pool=pool)
 admin.add_view(rediscli.RedisCli(r))
 
 app.secret_key = '\xbd$\x96\xb4\x80GYt"\x01\x9bk+"\x0c\xbd+\xc2\xf7A\xcb\xea\xee\x89/\xbe)4\xce-\xa3qbrian'
-app.run(host='0.0.0.0', port=1998, debug=True)
+#app.run(host='0.0.0.0', port=1998, debug=True)
