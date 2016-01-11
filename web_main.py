@@ -40,4 +40,4 @@ def page_not_found(error):
         logging.error(e)
 
 
-app.run(host='0.0.0.0', port=1998, debug=True)
+#app.run(host='0.0.0.0', port=1998, debug=True)
