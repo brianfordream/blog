@@ -3,7 +3,6 @@ __author__ = 'brianyang'
 from flask import Blueprint, render_template, session, request, redirect, url_for
 from service import get_articles, get_article, get_categories, get_articles_count, get_next_article, get_pre_article
 from util import page_slice
-import logging
 
 import sys
 

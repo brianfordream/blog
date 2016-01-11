@@ -6,6 +6,7 @@ from model import Article, Tag, Category, ArticleRedis
 from model import Session
 from sqlalchemy import func
 from util import get_redis_client
+from flask import abort
 
 redis_client = get_redis_client()
 
@@ -24,6 +25,8 @@ def get_articles(page_num, page_size, category=None, tag=None):
         articles = session.query(Article.id, Article.title, Article.create_time).join(Category).filter(
             Article.category is not None).order_by(Article.create_time.desc())[
                    (page_num - 1) * page_size:page_num * page_size]
+    if len(articles) == 0:
+        abort(404)
     parsed_articled = []
     for article in articles:
         id, title, create_time = article
@@ -59,8 +62,11 @@ def get_article(article_id):
         redis_key, 'id', 'title', 'content', 'author', 'create_time', 'tags', 'category_id', 'category_name')
     if not art_id:
         session = Session()
-        article, category = session.query(Article, Category.name).join(Category).filter(
+        result = session.query(Article, Category.name).join(Category).filter(
             Article.id == article_id).first()
+        if not result:
+            abort(404)
+        article, category = result
         article.content = re.sub("\"\"\"", r'＂＂＂', article.content)
         article.title = re.sub("\"\"\"", r'＂＂＂', article.title)
         redis_client.hmset(redis_key, {'id': article.id, 'title': article.title, 'content': article.content,
