@@ -1,7 +1,7 @@
 # encoding: utf8
 __author__ = 'brianyang'
 
-from flask import Flask
+from flask import Flask, redirect, url_for
 from view import blog
 from service import Session
 from flask_admin import Admin
@@ -11,6 +11,7 @@ from flask_admin.contrib import rediscli
 from model import Category
 import redis
 import sys
+import logging
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -30,4 +31,11 @@ admin.add_view(rediscli.RedisCli(r))
 
 app.secret_key = '\xbd$\x96\xb4\x80GYt"\x01\x9bk+"\x0c\xbd+\xc2\xf7A\xcb\xea\xee\x89/\xbe)4\xce-\xa3qbrian'
 #app.run(host='0.0.0.0', port=1998, debug=True)
+
+@app.errorhandler(404)
+def page_not_found(error):
+    try:
+        return redirect(url_for('/'))
+    except Exception, e:
+        logging.error(e)
 
