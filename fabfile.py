@@ -32,7 +32,7 @@ def deploy_server():
             result = run("sudo uwsgi --ini conf/uwsgi.conf  --reload pidfile")
             if result.failed:
                 run("sudo ps -ef|grep uwsgi")
-                run("""sudo ps -ef|grep "\-\-ini conf/$conf_file"|awk -F ' ' '{print $2}'|xargs sudo kill -9""")
+                run("""sudo ps -ef|grep "\-\-ini conf/uwsgi.conf"|awk -F ' ' '{print $2}'|xargs sudo kill -9""")
                 result = run("sudo uwsgi --ini conf/uwsgi.conf")
                 if result.failed:
                     print "launch failed"
