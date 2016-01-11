@@ -1,8 +1,9 @@
 # encoding: utf8
 __author__ = 'brianyang'
-from flask import Blueprint, render_template, session, request, redirect
+from flask import Blueprint, render_template, session, request, redirect, url_for
 from service import get_articles, get_article, get_categories, get_articles_count, get_next_article, get_pre_article
 from util import page_slice
+import logging
 
 import sys
 
@@ -76,4 +77,11 @@ def login():
 def baidu_verify():
     return render_template('baidu-verify-13733661B2.txt')
 
+
+@blog.errorhandler(404)
+def page_not_found(error):
+    try:
+        return redirect(url_for('/'))
+    except Exception, e:
+        logging.error(e)
 
