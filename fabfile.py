@@ -19,8 +19,7 @@ def commit_code():
             if result.failed and not confirm("Pull failed, continue?"):
                 abort("abort!")
             local("git add .")
-            r1 = local("git commit -m 'auto commit'")
-            print r1.failed
+            local("git commit -m 'auto commit'")
             local("git push origin master")
 
 
