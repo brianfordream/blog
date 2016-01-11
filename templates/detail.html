@@ -20,12 +20,4 @@
 {% if next_article.title != None %}
 <p><small>下一篇:<a href="../{{next_article.id}}">{{ next_article.title}}</a></small></p>
 {% endif %}
-<div id="SOHUCS"></div>
-<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-    window.changyan.api.config({
-        appid: 'cys4c1kXB',
-        conf: 'prod_99af933c2226ede63b89282ca4b1fb0e'
-    });
-</script>
 {% endblock body %}
