@@ -59,6 +59,7 @@ def tag_classify(tag, page_num):
     categories = get_categories()
     return render_template('index.html', articles=articles, categories=categories, pre=pre, behind=behind)
 
+
 @blog.route('/admin/login/', methods=['POST'])
 def login():
     params = request.form
@@ -70,6 +71,12 @@ def login():
     else:
         return redirect('/admin/')
 
+
 @blog.route('/baidu-verify-13733661B2.txt/')
 def baidu_verify():
     return render_template('baidu-verify-13733661B2.txt')
+
+
+@blog.errorhandler(404)
+def page_not_found(error):
+    return index()
