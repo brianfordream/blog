@@ -1,6 +1,6 @@
 __author__ = 'brianyang'
 
-from fabric.api import local, settings, abort, cd, run, env, lcd
+from fabric.api import local, settings, abort, cd, run, env, lcd, task
 from fabric.contrib.console import confirm
 from fabric.network import ssh
 
@@ -11,6 +11,7 @@ env.user = 'ubuntu'
 env.key_filename = "~/Documents/why.pem"
 
 
+@task(alias="commit")
 def commit_code():
     code_dir = "/home/q/blog"
     with settings(warn_only=True):
