@@ -11,7 +11,6 @@ env.user = 'ubuntu'
 env.key_filename = "~/Documents/why.pem"
 
 
-@task(alias="commit")
 def commit_code():
     code_dir = "/home/q/blog"
     with settings(warn_only=True):
@@ -38,6 +37,7 @@ def deploy_server():
                     print "launch failed"
 
 
+@task(alias="install")
 def deploy():
     commit_code()
     deploy_server()
