@@ -11,6 +11,7 @@ from flask_admin.contrib import rediscli
 from model import Category
 import redis
 import sys
+import logging
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -36,4 +37,4 @@ def page_not_found(error):
     try:
         return blog.index()
     except Exception, e:
-        print e
+        logging.error(e)
