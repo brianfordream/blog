@@ -77,6 +77,3 @@ def baidu_verify():
     return render_template('baidu-verify-13733661B2.txt')
 
 
-@blog.errorhandler(404)
-def page_not_found(error):
-    return index()
