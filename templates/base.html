@@ -55,7 +55,6 @@
                 </li>
                 {% endfor %}
             </ul>
-            <div id="cyReping" role="cylabs" data-use="reping"></div>
         </div>
         <div class="col-md-9">
             {% block body %}
@@ -77,21 +76,5 @@
         </script>
     </p>
 </div>
-
-<!-- 如果页面同时使用多个实验室项目，以下代码只需要引入一次，只配置上面的div标签即可 -->
-<script type="text/javascript" charset="utf-8"
-        src="http://changyan.itc.cn/js/??lib/jquery.js,changyan.labs.js?appid=cys4c1kXB"></script>
-<script>
-	(function(){
-	    var bp = document.createElement('script');
-	    bp.src = '//push.zhanzhang.baidu.com/push.js';
-	    var s = document.getElementsByTagName("script")[0];
-	    s.parentNode.insertBefore(bp, s);
-	})();
-
-
-
-
-</script>
 </body>
 </html>
