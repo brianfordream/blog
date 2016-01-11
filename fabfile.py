@@ -6,6 +6,10 @@ from fabric.network import ssh
 
 ssh.util.log_to_file("paramiko.log", 10)
 
+env.hosts = ['52.76.137.215']
+env.user = 'ubuntu'
+env.key_filename = "~/Documents/why.pem"
+
 
 def commit_code():
     code_dir = "/home/q/blog"
