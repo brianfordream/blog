@@ -33,4 +33,7 @@ app.secret_key = '\xbd$\x96\xb4\x80GYt"\x01\x9bk+"\x0c\xbd+\xc2\xf7A\xcb\xea\xee
 
 @app.errorhandler(404)
 def page_not_found(error):
-    return blog.index()
+    try:
+        return blog.index()
+    except Exception, e:
+        print e
