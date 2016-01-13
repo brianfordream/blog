@@ -31,7 +31,7 @@ r = redis.StrictRedis(connection_pool=pool)
 admin.add_view(rediscli.RedisCli(r))
 
 path = os.path.join(os.path.dirname(__file__), 'backup')
-admin.add_view(FileAdmin(path, '/static/backup', name="备份文件"))
+admin.add_view(FileAdmin(path, '/backup/', name="备份文件"))
 
 app.secret_key = '\xbd$\x96\xb4\x80GYt"\x01\x9bk+"\x0c\xbd+\xc2\xf7A\xcb\xea\xee\x89/\xbe)4\xce-\xa3qbrian'
 
