@@ -1,7 +1,7 @@
 # encoding: utf8
 __author__ = 'brianyang'
 
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect
 from view import blog
 from service import Session
 from flask_admin import Admin
@@ -11,7 +11,6 @@ from flask_admin.contrib import rediscli
 from model import Category
 import redis
 import sys
-import logging
 
 reload(sys)
 sys.setdefaultencoding('utf8')
