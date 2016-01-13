@@ -72,6 +72,11 @@ def login():
         return redirect('/admin/')
 
 
+@blog.route("/admin/backup/<filename>", methods=['POST', 'GET'])
+def backup(filename):
+    return render_template("backup/%s" % filename)
+
+
 @blog.route('/baidu-verify-13733661B2.txt/')
 def baidu_verify():
     return render_template('baidu-verify-13733661B2.txt')

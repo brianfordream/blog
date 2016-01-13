@@ -30,8 +30,8 @@ pool = redis.ConnectionPool(host='localhost', port=6379, db=0, password='Djhd123
 r = redis.StrictRedis(connection_pool=pool)
 admin.add_view(rediscli.RedisCli(r))
 
-path = os.path.join(os.path.dirname(__file__), 'backup')
-admin.add_view(FileAdmin(path, '/backup/', name="备份文件"))
+path = os.path.join(os.path.dirname(__file__), 'templates/backup')
+admin.add_view(FileAdmin(path, '/admin/backup/', name="备份文件"))
 
 app.secret_key = '\xbd$\x96\xb4\x80GYt"\x01\x9bk+"\x0c\xbd+\xc2\xf7A\xcb\xea\xee\x89/\xbe)4\xce-\xa3qbrian'
 
@@ -41,4 +41,4 @@ def page_not_found(error):
     return redirect('/')
 
 
-#app.run(host='0.0.0.0', port=1998, debug=True)
+app.run(host='0.0.0.0', port=1998, debug=True)
