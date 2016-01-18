@@ -2,3 +2,5 @@
 .idea/
 logs/
 pidfile
+backup/
+*.log
