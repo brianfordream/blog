@@ -40,5 +40,9 @@ app.secret_key = '\xbd$\x96\xb4\x80GYt"\x01\x9bk+"\x0c\xbd+\xc2\xf7A\xcb\xea\xee
 def page_not_found(error):
     return redirect('/')
 
+# new relic 监控 newrelic.com
+import newrelic.agent
+
+newrelic.agent.initialize('newrelic.ini')
 
 #app.run(host='0.0.0.0', port=1998, debug=True)
