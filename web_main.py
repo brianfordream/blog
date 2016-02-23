@@ -41,8 +41,8 @@ def page_not_found(error):
     return redirect('/')
 
 # new relic 监控 newrelic.com
-import newrelic.agent
+#import newrelic.agent
 
-newrelic.agent.initialize('newrelic.ini')
+#newrelic.agent.initialize('newrelic.ini')
 
-app.run(host='0.0.0.0', port=1998, debug=True)
+#app.run(host='0.0.0.0', port=1998, debug=True)
