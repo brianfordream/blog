@@ -18,7 +18,7 @@ import requests
 from bs4 import BeautifulSoup
 
 url = 'http://xjh.haitou.cc/bj/page-%d'
-scrapy_size = 1
+scrapy_size = 30
 result = []
 id_dict = {}
 
@@ -56,7 +56,7 @@ for i in range(1, scrapy_size + 1):
     response = requests.get(url % i)
     response.encoding = 'utf8'
     response = response.text
-    soup = BeautifulSoup(response)
+    soup = BeautifulSoup(response, 'html5lib')
     parse_result(soup, result)
     time.sleep(random.randint(1000, 5000) / 1000)
 
