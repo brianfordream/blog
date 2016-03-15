@@ -2,17 +2,18 @@
 __author__ = 'brianyang'
 
 from flask import Flask, redirect
-from view import blog
 from service import Session
 from flask_admin import Admin
 from flask_admin.contrib.fileadmin import FileAdmin
 from modelview import ArticleView, TagView
 from flask_admin.contrib.sqla import ModelView
 from flask_admin.contrib import rediscli
-from model import Category
 import redis
 import sys
 import os
+from view import blog
+from ionic import ionic
+from model import Category
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -21,6 +22,7 @@ app = Flask(__name__)
 app.debug = False
 
 app.register_blueprint(blog)
+app.register_blueprint(ionic)
 session = Session()
 admin = Admin(app, name='flask_admin', template_mode='bootstrap3')
 admin.add_view(ArticleView(session))
@@ -45,4 +47,4 @@ def page_not_found(error):
 
 #newrelic.agent.initialize('newrelic.ini')
 
-#app.run(host='0.0.0.0', port=1998, debug=True)
+app.run(host='0.0.0.0', port=1998, debug=True)
