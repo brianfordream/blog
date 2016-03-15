@@ -5,6 +5,8 @@ import sys
 import time
 import random
 import json
+import sys
+sys.path.append('/home/q/blog')
 from util import get_redis_client
 
 redis_client = get_redis_client()
