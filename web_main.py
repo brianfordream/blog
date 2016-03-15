@@ -47,4 +47,4 @@ def page_not_found(error):
 
 #newrelic.agent.initialize('newrelic.ini')
 
-#app.run(host='0.0.0.0', port=1998, debug=True)
+app.run(host='0.0.0.0', port=1998, debug=True)
